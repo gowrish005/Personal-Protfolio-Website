@@ -13,9 +13,11 @@
           <img src="images/logo.png" class="logo" />
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#coding">Coding</a></li>
+            <li><a href="#about" onclick="opentab('education')">Education</a></li>
+            <li><a href="#backs" onclick="opentab('skills')">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
@@ -28,39 +30,195 @@
     </div>
 
     <!-- --------about--------- -->
+    <section id="about">
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/user.png" alt="" />
+            </div>
 
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user.png" alt="" />
+            <div class="about-col-2">
+              <h1 class="sub-title">About me</h1>
+              <p class="about-me-ds">
+                I’m Gowrish H B, a 3<sup>rd</sup> year Bachelor of Engineering
+                (B.E.) student in Computer Science at Cambridge Institute of
+                Technology North Campus. Proficient in Java, Python, Database
+                Management Systems (MySQL), and with a strong foundation in
+                DevOps, I’m also expanding my back-end expertise with Spring
+                Boot and Django. With a knack for graphic design, I’m passionate
+                about building scalable systems and enhancing user experiences
+                through well-designed, efficient solutions.
+              </p>
+
+              <Section id="backs">
+              <div class="tab-titels">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Java</span><br />Proficient in Java, with strong
+                    knowledge in object-oriented programming (OOP) concepts
+                  </li>
+                  <li>
+                    <span>MySQL</span><br />Experienced in Database Management
+                    with MySQL for effective data storage and retrieval
+                  </li>
+                  <li>
+                    <span>Python</span><br />Skilled in Python, including
+                    object-oriented programming (OOP) fundamentals
+                  </li>
+                  <li>
+                    <span>Back-End & Server Management</span><br />Experienced
+                    in back-end server management, with DevOps knowledge applied
+                    to managing Minecraft servers
+                  </li>
+                  <li>
+                    <span>Web Development</span><br />Skilled in web
+                    development, with foundational knowledge of Django
+                  </li>
+                  <li>
+                    <span>Graphic Design</span><br />Proficient in creating
+                    visually appealing graphics for digital media
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li>
+                    <span>GDG Curator</span><br /><u>Sep 2024 - Present</u
+                    ><br />Organizing and curating events for the Google
+                    Developer Group (GDG), fostering a community of tech
+                    enthusiasts and facilitating workshops.
+                  </li>
+                  <li>
+                    <span>IEEE Webmaster</span><br /><u>Jan 2024 - Nov 2024</u
+                    ><br />Managed the IEEE student branch website, ensuring
+                    functionality, updating content, and supporting event
+                    promotions.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span
+                      >Bachelor of Engineering (B.E.) in Computer Science<br /></span
+                    ><u>2021 - Present</u><br />Cambridge Institute of
+                    Technology North Campus (CITNC), Bangalore<br />
+                  </li>
+                  <li>
+                    <span>Diploma in Computer Science & Engineering<br /></span
+                    ><u>2021 - 2023</u> <br />Government Polytechnic KGF,
+                    Karnataka<br />
+                  </li>
+                </ul>
+              </div>
+            </Section>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
-            <p class="about-me-ds">
-              I’m Gowrish H B, a 3<sup>rd</sup> year Bachelor of Engineering
-              (B.E.) student in Computer Science at Cambridge Institute of
-              Technology North Campus. Proficient in Java, Python, Database
-              Management Systems (MySQL), and with a strong foundation in
-              DevOps, I’m also expanding my back-end expertise with Spring Boot
-              and Django. With a knack for graphic design, I’m passionate about
-              building scalable systems and enhancing user experiences through
-              well-designed, efficient solutions.
+    <!-- ------- Choding----------->
+
+     <Section id="coding">
+        <h1 class="coding-title">Coding</h1>
+        <br>
+        <div class="portfolio-container">
+        <div class="portfolio-item" onclick="window.location.href='https://www.codechef.com/users/gowrishhb5';">
+          <img src="https://cdn.codechef.com/images/cc-logo.svg" alt="Portfolio Item 1" />
+          <h2>Code Chef</h2>
+          <p class="portfolio-description">
+            🔢 <b>Total Problems Solved:</b> 319 (Silver Badge)<br>
+            🏆 <b>Goal:</b> 500 problems to achieve the Gold Badge<br>
+            🔥 <b class="lar">Learning Paths:</b> Actively practicing Java and building aㅤㅤ solid foundation across programming languages.
+          </p>
+        </div>
+        <div class="portfolio-item" onclick="window.location.href='https://www.codechef.com/users/gowrishhb5';">
+          <img src="https://user-images.githubusercontent.com/17762967/42728663-26ebdb04-87dd-11e8-928f-fb01479a2ce1.png" style="width: auto; height: 100%;"/>
+          <h2>HackerRank</h2>
+          <p class="portfolio-description">
+            📈 <b>Rank:</b> 420,098 <br>
+             ✨<b>Points:</b> 138/150<br>
+            🔖 <b>Skills Practicing:</b> MySQL and Java<br>
+            🏅 Actively solving challenges to improve ranking and skills
+        </p>
+        </div>
+        <div class="portfolio-item" onclick="window.location.href='https://www.codechef.com/users/gowrishhb5';">
+            <img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" alt="Portfolio Item 1" style="width: auto; height: 100%;" />
+          <h2>LeetCode</h2>
+          <p class="portfolio-description">
+            📊 <b>Rank:</b> 2,081,655<br>
+            🔍 <b>Problems Solved:</b> 35 (MySQL: 34, Java: 1)<br>
+            🔥 <b>Acceptance Rate:</b> 73.44%<br>
+            🏅 Focusing on SQL and improving problem-solving skills
+        </p>
+        </div>
+
+      </Section>
+
+        <!-- --------services-------- -->
+
+    <div class="services">
+      <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="row">
+          <div class="service-col">
+            <img src="images/service-1.png" alt="" />
+            <h3>Web Development</h3>
+            <p>
+              Skilled in web development, with foundational knowledge of Django
             </p>
-            <div class="tab-titels">
-              <p class="tab-links active-link">Skills</p>
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Education</p>
-            </div>
-            <div class="tab-contents">
-                <li><span>UI/UX</span><br>Desiging web/app interfaces</li>
-                <li><span>whatever</span><br>soemthing doing something</li>
-                <li><span>UI/UX</span><br>Desiging web/app interfaces</li>
-            </div>
+          </div>
+          <div class="service-col">
+            <img src="images/service-2.png" alt="" />
+            <h3>Graphic Design</h3>
+            <p>
+              Proficient in creating visually appealing graphics for digital
+              media
+            </p>
+          </div>
+          <div class="service-col">
+            <img src="images/service-3.png" alt="" />
+            <h3>Database Management</h3>
+            <p>
+              Experienced in Database Management with MySQL for effective data
+              storage and retrieval
+            </p>
           </div>
         </div>
       </div>
     </div>
   </body>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+
+    function opentab(tabname) {
+      console.log(document.getElementById(tabname));
+      for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
 </html>
