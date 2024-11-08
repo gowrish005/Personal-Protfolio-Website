@@ -53,17 +53,17 @@
 
               <Section id="backs">
               <div class="tab-titels">
-                <p class="tab-links active-link" onclick="opentab('skills')">
+                <p class="tab-links active-link" id="skills-tab" onclick="opentab('skills')">
                   Skills
                 </p>
-                <p class="tab-links" onclick="opentab('experience')">
+                <p class="tab-links" id="experience-tab" onclick="opentab('experience')">
                   Experience
                 </p>
-                <p class="tab-links" onclick="opentab('education')">
+                <p class="tab-links" id="education-tab" onclick="opentab('education')">
                   Education
                 </p>
               </div>
-              <div class="tab-contents active-tab" id="skills">
+              <div class="tab-contents" id="skills">
                 <ul>
                   <li>
                     <span>Java</span><br />Proficient in Java, with strong
@@ -218,6 +218,7 @@
         tabcontent.classList.remove("active-tab");
       }
       event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname + "-tab").classList.add("active-link");
       document.getElementById(tabname).classList.add("active-tab");
     }
   </script>

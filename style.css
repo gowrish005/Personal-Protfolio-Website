@@ -118,7 +118,7 @@ nav ul li a:hover::after {
 
 .tab-titels {
   display: flex;
-  margin: 20px 0 40px;    
+  margin: 20px 0 40px;
 }
 .tab-links {
   margin-right: 50px;
@@ -128,7 +128,7 @@ nav ul li a:hover::after {
   position: relative;
 }
 .tab-links::after {
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
   background-color: #ff004f;
@@ -137,10 +137,10 @@ nav ul li a:hover::after {
   bottom: -8px;
   transition: 0.5s;
 }
-.tab-links.active-link::after{
-    width: 50%;
+.tab-links.active-link::after {
+  width: 50%;
 }
-.tab-contents ul li{
+.tab-contents ul li {
   list-style: none;
   margin: 10px 0;
   font-size: 20px;
@@ -152,10 +152,10 @@ nav ul li a:hover::after {
   font-weight: 600;
   line-height: 1.4;
 }
-.tab-contents{
+.tab-contents {
   display: none;
 }
-.tab-contents active-tab{
+.tab-contents.active-tab {
   display: block;
 }
 .tab-contents ul li u {
@@ -165,8 +165,6 @@ nav ul li a:hover::after {
   font-size: 20px;
   font-weight: 500;
 }
-
-
 
 /* -----------coding------- */
 
@@ -181,7 +179,7 @@ nav ul li a:hover::after {
 .portfolio-item {
   cursor: pointer;
   width: calc(33.333% - 20px); /* Fits 3 items per row */
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0);
   border-radius: 4px;
   overflow: hidden;
@@ -192,7 +190,6 @@ nav ul li a:hover::after {
   /* text-align: center; */
   margin-bottom: 20px;
   box-sizing: border-box;
-  
 }
 
 .portfolio-item:hover {
@@ -210,7 +207,6 @@ nav ul li a:hover::after {
 
 .portfolio-description {
   padding: 15px;
-
 }
 
 .portfolio-description h2 {
@@ -225,12 +221,12 @@ nav ul li a:hover::after {
   text-align: justify;
 }
 
-.mycoding{
+.mycoding {
   display: flex;
   justify-content: center;
 }
 
-.coding-title{
+.coding-title {
   align-items: center;
   text-align: center;
   font-size: 60px;
