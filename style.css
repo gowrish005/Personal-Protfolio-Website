@@ -246,6 +246,7 @@ nav ul li a:hover::after {
   align-items: center;
   margin-bottom: 20px;
   box-sizing: border-box;
+  text-align: justify;
 }
 
 .portfolio-item:hover {
@@ -259,10 +260,12 @@ nav ul li a:hover::after {
   object-fit: cover;
   object-position: top;
   border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
 }
 
 .portfolio-description {
   padding: 15px;
+  
 }
 
 .portfolio-description h2 {
