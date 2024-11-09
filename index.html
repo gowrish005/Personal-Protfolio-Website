@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gowrish H B</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
     <div id="header">
@@ -13,24 +14,42 @@
           <img src="images/logo.png" class="logo" />
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#coding">Coding</a></li>
-            <li><a href="#about" onclick="opentab('education')">Education</a></li>
+            <li><a href="#about" onclick="opentab('education')"">About</a></li>
+            <li><a href="#coding" onclick="opentab('education')">Coding</a></li>
             <li><a href="#backs" onclick="opentab('skills')">Skills</a></li>
+            <li><a href="#about" onclick="opentab('experience')">Experience</a></li>
+            <li><a href="#educations" onclick="opentab('education')">Education</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
           <h1>Hello, I'm <span>Gowrish</span></h1>
-          <br />
           <h3>Computer Science and Engineer</h3>
+        </div>
+        <br><br>
+        <div class="header-buttons">
+          <a href="https://github.com/gowrish005" target="_blank" class="button icon-button">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://instagram.com/gowrish_005" target="_blank" class="button icon-button">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/gowrishhb5" target="_blank" class="button icon-button">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="path-to-your-resume.pdf" download class="resume-button">
+            <i class="fas fa-file-download"></i> Resume
+          </a>
+        </div>
+              
         </div>
       </div>
     </div>
 
     <!-- --------about--------- -->
     <section id="about">
+      <section id="educations"></section>
       <div id="about">
         <div class="container">
           <div class="row">
@@ -45,13 +64,13 @@
                 (B.E.) student in Computer Science at Cambridge Institute of
                 Technology North Campus. Proficient in Java, Python, Database
                 Management Systems (MySQL), and with a strong foundation in
-                DevOps, I’m also expanding my back-end expertise with Spring
-                Boot and Django. With a knack for graphic design, I’m passionate
+                DevOps</p><Section id="backs">
+                <p class="about-me-ds">I’m also expanding my back-end expertise with Spring Boot and Django. With a knack for graphic design, I’m passionate
                 about building scalable systems and enhancing user experiences
                 through well-designed, efficient solutions.
               </p>
 
-              <Section id="backs">
+              
               <div class="tab-titels">
                 <p class="tab-links active-link" id="skills-tab" onclick="opentab('skills')">
                   Skills
@@ -109,7 +128,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="tab-contents" id="education">
+              <div class="tab-contents active-tab" id="education">
                 <ul>
                   <li>
                     <span
@@ -124,16 +143,15 @@
                   </li>
                 </ul>
               </div>
-            </Section>
+            
+            
             </div>
-          </div>
+          </div><Section id="coding">
         </div>
       </div>
-    </section>
-
+    </Section id="about">
     <!-- ------- Choding----------->
-
-     <Section id="coding">
+    
         <h1 class="coding-title">Coding</h1>
         <br>
         <div class="portfolio-container">
@@ -146,7 +164,7 @@
             🔥 <b class="lar">Learning Paths:</b> Actively practicing Java and building aㅤㅤ solid foundation across programming languages.
           </p>
         </div>
-        <div class="portfolio-item" onclick="window.location.href='https://www.codechef.com/users/gowrishhb5';">
+        <div class="portfolio-item" onclick="window.location.href='https://www.hackerrank.com/profile/karnataka_gamer1';">
           <img src="https://user-images.githubusercontent.com/17762967/42728663-26ebdb04-87dd-11e8-928f-fb01479a2ce1.png" style="width: auto; height: 100%;"/>
           <h2>HackerRank</h2>
           <p class="portfolio-description">
@@ -156,8 +174,18 @@
             🏅 Actively solving challenges to improve ranking and skills
         </p>
         </div>
-        <div class="portfolio-item" onclick="window.location.href='https://www.codechef.com/users/gowrishhb5';">
-            <img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" alt="Portfolio Item 1" style="width: auto; height: 100%;" />
+
+      <div class="portfolio-item" onclick="window.location.href='https://www.geeksforgeeks.org/user/gowrislxtk/';">
+        <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/GeeksforGeeks.svg/2560px-GeeksforGeeks.svg.png" alt="Portfolio Item 1" style="width: auto; height: 500px;" />
+      <h2>GeeksforGeeks</h2>
+      <p class="portfolio-description">
+        🔢 <b>Total Problems Solved:</b> 58 (Java and DSA Focus)<br>
+                  🏆 <b>Goal:</b> Achieve a higher ranking and contribute more tutorials.<br>
+                  🔥 <b class="lar">Learning Paths:</b> Focusing on Data Structures & Algorithms in Java, solving problems, and preparing for competitive programming contests.
+    </p>
+    </div>
+        <div class="portfolio-item" onclick="window.location.href='https://leetcode.com/gowrishhb5';">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/LeetCode_Logo_1.png" alt="Portfolio Item 1" style="width: auto; height: 100%;" />
           <h2>LeetCode</h2>
           <p class="portfolio-description">
             📊 <b>Rank:</b> 2,081,655<br>
@@ -166,41 +194,125 @@
             🏅 Focusing on SQL and improving problem-solving skills
         </p>
         </div>
-
       </Section>
 
-        <!-- --------services-------- -->
 
-    <div class="services">
-      <div class="container">
-        <h1 class="sub-title">Services</h1>
-        <div class="row">
-          <div class="service-col">
-            <img src="images/service-1.png" alt="" />
-            <h3>Web Development</h3>
-            <p>
-              Skilled in web development, with foundational knowledge of Django
-            </p>
+    <!-- --------projects-------- -->
+    <section id="projects">
+      <h1 class="projects-title">Projects</h1>
+      <br>
+      <div class="portfolio-container">
+<div class="portfolio-item" onclick="window.location.href='https://github.com/gowrish005/TeachStackGSVY';">
+  <img src="project-images/1.png" alt="Hotel Booking Web Application" />
+  <h2>Hotel Booking Web Application</h2>
+  <p class="portfolio-description">
+    🏨 <b>Description:</b> A hotel booking platform featuring browsing, booking, and reservation management.<br>
+    💻 <b>Technologies:</b> Spring Boot, Java, MySQL, HTML, CSS, JavaScript.<br>
+    🌟 <b>Highlight:</b> Full-stack Java development and backend management.
+  </p>
+</div>
+
+<div class="portfolio-item" onclick="window.location.href='https://github.com/gowrish005/TodoListDjango';">
+  <img src="project-images/2.png" alt="TodoListDjango" />
+  <h2>TodoListDjango</h2>
+  <p class="portfolio-description">
+    📝 <b>Description:</b> A task management app with CRUD functionality.<br>
+    💻 <b>Technologies:</b> Django, HTML, CSS.<br>
+    🌟 <b>Highlight:</b> Database handling with Django.
+  </p>
+</div>
+
+<div class="portfolio-item" onclick="window.location.href='https://github.com/gowrish005/HellCraftNetworkMinecraftServer';">
+  <img src="project-images/3.png" alt="HellCraft Network Minecraft Server" style="height: 100%; width: auto;"/>
+  <h2>HellCraft Network Minecraft Server</h2>
+  <p class="portfolio-description">
+    🎮 <b>Description:</b> Managed a Minecraft server using Spigot/Paper with DevOps practices.<br>
+    💻 <b>Technologies:</b> Minecraft server management, DevOps, CI/CD.<br>
+    🌟 <b>Highlight:</b> Server optimization and automation.
+  </p>
+</div>
+
+<div class="portfolio-item" onclick="window.location.href='https://github.com/gowrish005/YTShortsMaker';">
+  <img src="https://goodly.co.in/wp-content/uploads/2023/10/youtube-logo-png-46016.png" alt="YTShortsMaker" style="height: 100%; width: auto;"/>
+  <h2>YTShortsMaker</h2>
+  <p class="portfolio-description">
+    🎬 <b>Description:</b> A Python script automating YouTube shorts creation.<br>
+    💻 <b>Technologies:</b> Python.<br>
+    🌟 <b>Highlight:</b> Video processing automation.
+  </p>
+</div>
+
+<div class="portfolio-item" onclick="window.location.href='https://github.com/gowrish005/AI-Smart-Mirror';">
+  <img src="project-images/5.jpeg" alt="AI-Smart-Mirror"/>
+  <h2>AI-Smart-Mirror</h2>
+  <p class="portfolio-description">
+    🖥️ <b>Description:</b> An interactive smart mirror displaying real-time data.<br>
+    💻 <b>Technologies:</b> Python.<br>
+    🌟 <b>Highlight:</b> IoT device integration with Python.
+  </p>
+</div>
+
+<div class="portfolio-item" onclick="window.location.href='https://github.com/gowrish005/IEEE-Student-Branch-Website';">
+  <img src="project-images/6.png" alt="IEEE Student Branch Website" />
+  <h2>IEEE Student Branch Website</h2>
+  <p class="portfolio-description">
+    🌐 <b>Description:</b> Website developed for IEEE Student Branch activities and announcements.<br>
+    💻 <b>Technologies:</b> HTML, CSS.<br>
+    🌟 <b>Highlight:</b> Professional web development for an organization.
+  </p>
+</div>
+
+<div class="portfolio-item" onclick="window.location.href='https://github.com/gowrish005/Personal-Protfolio-Website';">
+  <img src="project-images/7.png" alt="Personal Portfolio Website" />
+  <h2>Personal Portfolio Website</h2>
+  <p class="portfolio-description">
+    🌍 <b>Description:</b> A personal website showcasing skills, projects, and achievements.<br>
+    💻 <b>Technologies:</b> HTML, CSS, JavaScript.<br>
+    🌟 <b>Highlight:</b> Front-end design and self-branding.
+  </p>
+</div>
+
+<div class="portfolio-item" onclick="window.location.href='https://github.com/gowrish005/basicclacic';">
+  <img src="project-images/8.png" alt="Basic Calculator GUI" />
+  <h2>Basic Calculator GUI</h2>
+  <p class="portfolio-description">
+    🔢 <b>Description:</b> A beginner-friendly calculator with a graphical user interface.<br>
+    💻 <b>Technologies:</b> Python.<br>
+    🌟 <b>Highlight:</b> Demonstrates GUI design skills in Python.
+  </p>
+</div>
+</div>
+<section id="contact">
+  <!-- Form Section -->
+  <div class="form-section">
+    <div class="form-container">
+      <h2>Contact Me</h2>
+      <form action="https://formsubmit.co/gowrishhb5@gmail.com" method="POST">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+    </div>
+<!-- ---------footer--------- -->
+
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/gowrishhb5" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/gowrish005" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/gowrishhb005" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/gowrish_005" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
           </div>
-          <div class="service-col">
-            <img src="images/service-2.png" alt="" />
-            <h3>Graphic Design</h3>
-            <p>
-              Proficient in creating visually appealing graphics for digital
-              media
-            </p>
-          </div>
-          <div class="service-col">
-            <img src="images/service-3.png" alt="" />
-            <h3>Database Management</h3>
-            <p>
-              Experienced in Database Management with MySQL for effective data
-              storage and retrieval
-            </p>
-          </div>
+          <br>
+          <p>All Rights Reserved. 2024 Gowrish H B</p>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 
   <script>
@@ -222,4 +334,32 @@
       document.getElementById(tabname).classList.add("active-tab");
     }
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top-100
+        }, 800, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  
 </html>
